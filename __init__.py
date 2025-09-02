@@ -1,8 +1,30 @@
+"""
+TrackStudent Package - Sistema de Gerenciamento de Estudantes
+
+Sistema completo para gerenciamento de estudantes,
+incluindo cadastro, busca, atualização, remoção e geração de relatórios.
+"""
 
 from .models import Student
 from .validators import StudentValidator
 from .database import DatabaseManager
 from .reports import ReportManager
+from .handlers import (
+    MenuHandler,
+    StudentInputHandler, 
+    StudentUpdateHandler,
+    SearchHandler,
+    StatisticsManager
+)
 
-__version__ = "1.0.0"
-__author__ = "Tiago Kasprzak Gorri, Mateus Zanettin, Matheus Muller, Vitor Vieira"
+__all__ = [
+    'Student',
+    'StudentValidator', 
+    'DatabaseManager',
+    'ReportManager',
+    'MenuHandler',
+    'StudentInputHandler',
+    'StudentUpdateHandler', 
+    'SearchHandler',
+    'StatisticsManager'
+]

@@ -1,3 +1,7 @@
+"""
+Reports - Módulo de geração de relatórios do sistema TrackStudent.
+"""
+
 from datetime import datetime
 from database import DatabaseManager
 
@@ -14,14 +18,15 @@ class ReportManager:
         if not students:
             return "Nenhum estudante cadastrado."
         
-        report = "\n=== RELATÓRIO DE ESTUDANTES ===\n"
-        report += f"Total de estudantes: {len(students)}\n"
-        report += f"Data do relatório: {datetime.now().strftime('%d/%m/%Y %H:%M')}\n\n"
+        report = [
+            "\n=== RELATÓRIO DE ESTUDANTES ===",
+            f"Total de estudantes: {len(students)}",
+            f"Data do relatório: {datetime.now().strftime('%d/%m/%Y %H:%M')}\n"
+        ]
         
-        for i, student in enumerate(students, 1):
-            report += f"{i}. {student}\n"
+        report.extend(f"{i}. {student}" for i, student in enumerate(students, 1))
         
-        return report
+        return "\n".join(report)
     
     def generate_course_report(self) -> str:
         """Gera relatório por curso."""
@@ -31,14 +36,16 @@ class ReportManager:
         
         courses = {}
         for student in students:
-            if student.course not in courses:
-                courses[student.course] = 0
-            courses[student.course] += 1
+            courses[student.course] = courses.get(student.course, 0) + 1
         
-        report = "\n=== RELATÓRIO POR CURSO ===\n"
-        report += f"Data do relatório: {datetime.now().strftime('%d/%m/%Y %H:%M')}\n\n"
+        report = [
+            "\n=== RELATÓRIO POR CURSO ===",
+            f"Data do relatório: {datetime.now().strftime('%d/%m/%Y %H:%M')}\n"
+        ]
         
-        for course, count in sorted(courses.items()):
-            report += f"Curso: {course} - {count} estudante(s)\n"
+        report.extend(
+            f"Curso: {course} - {count} estudante(s)"
+            for course, count in sorted(courses.items())
+        )
         
-        return report
+        return "\n".join(report)

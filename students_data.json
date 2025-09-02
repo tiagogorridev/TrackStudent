@@ -6,5 +6,21 @@
     "course": "BES",
     "age": 19,
     "registration_date": "2025-09-01"
+  },
+  {
+    "matricula": "STU20250901201421",
+    "name": "joao",
+    "email": "joao@gmail.com",
+    "course": "bes",
+    "age": 20,
+    "registration_date": "2025-09-01"
+  },
+  {
+    "matricula": "STU20250901215606",
+    "name": "tiago",
+    "email": "t@gmail.com",
+    "course": "bes",
+    "age": 20,
+    "registration_date": "2025-09-01"
   }
 ]
