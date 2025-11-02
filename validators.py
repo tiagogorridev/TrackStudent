@@ -18,7 +18,7 @@ class StudentValidator:
         if not email or not isinstance(email, str):
             return False
         
-        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
+        pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{1,}$'
         return re.match(pattern, email.strip()) is not None
     
     @classmethod

@@ -1,0 +1,34 @@
+[
+  {
+    "matricula": "STU20251102173137",
+    "name": "Ana",
+    "email": "ana@gmail.com",
+    "course": "ADS",
+    "age": 20,
+    "registration_date": "2025-11-02"
+  },
+  {
+    "matricula": "STU20251102173220",
+    "name": "Ana",
+    "email": "ana@gmail.com",
+    "course": "ADS",
+    "age": 20,
+    "registration_date": "2025-11-02"
+  },
+  {
+    "matricula": "STU20251102175528",
+    "name": "Ana",
+    "email": "ana@gmail.com",
+    "course": "ADS",
+    "age": 20,
+    "registration_date": "2025-11-02"
+  },
+  {
+    "matricula": "STU20251102180649",
+    "name": "Ana",
+    "email": "ana@gmail.com",
+    "course": "ADS",
+    "age": 20,
+    "registration_date": "2025-11-02"
+  }
+]

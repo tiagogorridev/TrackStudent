@@ -14,7 +14,6 @@ from .handlers import (
     StudentInputHandler, 
     StudentUpdateHandler,
     SearchHandler,
-    StatisticsManager
 )
 
 __all__ = [
@@ -26,5 +25,4 @@ __all__ = [
     'StudentInputHandler',
     'StudentUpdateHandler', 
     'SearchHandler',
-    'StatisticsManager'
 ]
