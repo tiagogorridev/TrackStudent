@@ -1,5 +1,5 @@
 import pytest
-from validators import StudentValidator
+from src.validators import StudentValidator
 
 # NOME
 @pytest.mark.parametrize("nome, esperado", [

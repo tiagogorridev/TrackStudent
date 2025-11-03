@@ -5,10 +5,10 @@ Versão otimizada sem funcionalidades de estatísticas.
 Autores: Tiago Kasprzak Gorri, Mateus Zanettin, Matheus Muller, Vitor Vieira
 """
 
-from validators import StudentValidator
-from database import DatabaseManager
-from reports import ReportManager
-from handlers import MenuHandler, StudentInputHandler, StudentUpdateHandler, SearchHandler
+from src.validators import StudentValidator
+from src.database import DatabaseManager
+from src.reports import ReportManager
+from src.handlers import MenuHandler, StudentInputHandler, StudentUpdateHandler, SearchHandler
 
 
 class TrackStudent:

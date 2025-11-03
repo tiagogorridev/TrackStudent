@@ -2,8 +2,8 @@
 Handlers - Classes especializadas para diferentes operações do sistema.
 """
 
-from models import Student
-from validators import StudentValidator
+from src.models import Student
+from src.validators import StudentValidator
 
 
 class MenuHandler:

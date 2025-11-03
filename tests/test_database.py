@@ -1,5 +1,5 @@
-from database import DatabaseManager
-from models import Student
+from src.database import DatabaseManager
+from src.models import Student
 
 def test_add_and_find_student():
     db = DatabaseManager("test_db.json")

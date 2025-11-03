@@ -5,7 +5,7 @@ Database - Módulo de gerenciamento de persistência de dados.
 import json
 import os
 from typing import List, Dict, Optional
-from models import Student
+from src.models import Student
 
 
 class DatabaseManager:

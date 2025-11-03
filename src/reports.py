@@ -3,7 +3,7 @@ Reports - Módulo de geração de relatórios do sistema TrackStudent.
 """
 
 from datetime import datetime
-from database import DatabaseManager
+from src.database import DatabaseManager
 
 
 class ReportManager:
